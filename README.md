@@ -36,7 +36,7 @@ ddev config --project-type=drupal11 --docroot=web
 ddev composer create-project drupal/recommended-project:11.x@dev --no-install
 
 # Install the add-on.
-ddev add-on get drupal-xb/ddev-drupal-xb-dev
+ddev add-on get drupal-canvas/ddev-drupal-xb-dev
 
 # Perform one-time setup operations.
 ddev xb-setup
