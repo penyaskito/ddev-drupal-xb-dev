@@ -10,5 +10,10 @@ cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT" || exit 1
 ../vendor/bin/phpstan \
   analyze \
   --configuration=modules/contrib/canvas/phpstan.neon \
-  --memory-limit=256M \
+  --memory-limit=1G \
+  --autoload-file=modules/contrib/canvas/phpstan_rules/autoload.php \
   modules/contrib/canvas
+
+# If we wanted to run exactly the same than composer or Gitlab CI:
+# cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/canvas" || exit 1
+# ../../../../vendor/bin/composer run phpstan
