@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Find problems in OpenApi with redocly.
+## Usage: xb-openapi
+## Example: ddev xb-openapi      # Check for errors.\nddev openapi
+## Aliases: openapi
+## ExecRaw: false
+## Flags: []
+## AutocompleteTerms: []
+
+cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/canvas" || exit 1
+
+npx @redocly/cli@latest lint openapi.yml

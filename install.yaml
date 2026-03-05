@@ -13,6 +13,7 @@ project_files:
   - commands/web/xb-core-set-version
   - commands/web/xb-dev-extras
   - commands/web/xb-eslint
+  - commands/web/xb-openapi
   - commands/web/xb-phpcs
   - commands/web/xb-phpstan
   - commands/web/xb-phpunit
